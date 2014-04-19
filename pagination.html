@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pagination Example</title>
+<style>
+body,p{border:0;vertical-align:baseline;margin:0;padding:0;font-family:Verdana, Geneva, sans-serif;
+ font-size:14px;color:#333333;height: 100%;}body{background:#CCC;}
+a {text-decoration: none;outline: 0;color: inherit;}
+h3{font-size:16px;padding-bottom: 15px;text-align: center;}
+.container{text-align: left;width: 100%;padding-bottom: 50px;}
+.wrapper {width: 650px;margin: 0 auto;}
+.launch-hdr label {font-weight: bold;font-size: 0.8571428571428571em;}
+.launch-hdr span {color: #e0861a;font-size: 0.7142857142857143em;}ul{list-style: none;}p{margin: 0;}
+ul li {background: #ecf0f4;width: 102%;height: 85px;margin-bottom: 20px;padding: 20px 15px;margin-left: -40px;position:relative;}
+.thumb-img {float: left;width: 100px;}
+.content {float: left;width: 510px;}
+.content header {border-bottom: 1px solid white;padding-bottom: 3px;color: #00728f;font-size: 1em;font-weight: bold;}
+.content header a {float: right;color: #e0861a;font-size: 0.7142857142857143em;text-decoration: underline;}
+.content .date-webinar {color: #00728f;font-size: 0.7142857142857143em;font-weight: bold;}
+.content .date-webinar time {color: #333333;font-weight: normal;}
+.content .cont-text {color: #333333;font-size: 0.8571428571428571em;line-height: 14px;padding-top: 10px;}
+
+.pager {float: right;background:#ecf0f4;height: 30px;width: 108px;position: relative;
+right: 0px;width: 118px \9;}
+.pager img {margin: 3px;} .pageNo{display:inline;position: relative;top: -10px;}
+
+</style>
+</head>
+
+<body>
+<div class="container" style="display:inline-block;"> <!-- container Starts-->
+  <h3> Simple Pagination Example for List Items</h3>
+   	<div class="wrapper">
+    	   	<header class="launch-hdr"><label>Webinars&nbsp;</label><span>&nbsp;(To launch webinars please register)</span></header>
+        	<ul id="paginationList">
+            	<li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb1.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum1 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb2.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum2 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb3.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum3 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb4.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum4 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb1.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum5 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb2.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum6 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb3.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum7 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+                  <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb3.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum8 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>  <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb3.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum9 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>  <li>
+                	<div class="thumb-img"><a href="javascript:void(0);" target="_parent" title="Innovation"><img src="images/thumb3.png" alt="Video thumb Image1" /></a></div>
+                    <div class="content">
+                    	<header>Lorem Ipsum10 <a href="javascript:void(0);" target="_parent" title="Register Please">Register</a></header>
+                        <div class="date-webinar">Date <time> 03/20/2014 Thursday</time></div>
+                        <div class="cont-text"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="pager" id="pager"><a href="javascript:void(0);" target="_parent" title="Previous"><img src="images/pager-left.png" /></a><div class="pageNo">Page 1</div>
+            <a href="javascript:void(0);" target="_parent" title="Next"><img src="images/pager-right.png" /></a>
+            </div>
+            
+        
+     </div>
+</div> <!--container Ends-->
+
+<!--Pagination-->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<!--The Pagination plugin which requires Jquery library-->
+<script src="paginate.js" type="text/javascript"></script> 
+<script>
+$(function(){
+/*whitepapers Pagination*/
+var paginate = $.fn.paginate({//options here
+		perPage	 : 3,//list items per page
+		pageId	  : "paginationList", //pagination ul Id
+		pager	   : "pager",//pager Id
+		leftImgSrc  : "images/pager-left.png",
+		rightImgSrc  : "images/pager-right.png",
+		leftImgActiveSrc : "images/pager-left-active.png",
+		rightImgActiveSrc : "images/pager-right-active.png",
+		getCurrentPage : function(currentPage){
+			$(".pageNo").html("Page "+currentPage);
+		}
+});
+
+});
+	
+</script>
+</body>
+</html>
